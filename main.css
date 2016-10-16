@@ -1,0 +1,144 @@
+
+
+body {
+	font-family: 'Bitter|Oswald', sans-serif;
+	background-color: #0A1729;
+	color: #EFEFEF;
+	margin: 0;
+	padding: 0;
+}
+
+#menu {
+	width:100%;
+	height: 60px;
+	margin:0;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+}
+
+#menu a:link,a:visited {
+	text-decoration: none;
+	color:#EFEFEF;
+}
+
+
+#menu a:hover,a:active {
+	color:#CCC;
+}
+
+#leftnav {
+	float: left;
+}
+
+#rightnav {
+	float: right;
+}
+
+#menu ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+}
+
+#menu li {
+	margin: 0px 10px 0px 10px;
+}
+
+.screen {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	/*border: solid;  /*<<<--- helps debugging */
+}
+
+.valign_dummy{
+	float: left;
+	height: 50%;
+	width: 100%;
+	margin-bottom: -1vh;
+}
+
+.content{
+	clear: both;
+	text-align: center;
+}
+
+/* ------------------------------    BEGIN CONTENT    ----------------------------------*/
+
+/* ------------------------------        HERO         ----------------------------------*/
+
+#hero {
+	background: url(forrest_bg.jpg) no-repeat;
+	background-size: cover;
+}
+
+#hero .screen {
+	background-color: rgba(10,23,41,0.6);
+}
+
+#hero .valign_dummy{
+	/* IF YOU NEED TO CHANGE VERTICAL ALIGN, PLAY HERE */
+	margin-bottom: -3vh;
+}
+
+
+/* ------------------------------     PLAY YOUR PART      ----------------------------------*/
+
+
+#playyourpart {
+
+	background: -o-linear-gradient(top, rgb(10,23,40) 0%, rgb(179,224,230) 100%);
+    background: -moz-linear-gradient(top, rgb(10,23,40) 0%, rgb(179,224,230) 100%);
+    background: -webkit-gradient(linear, left top, left top, color-stop(0, rgb(10,23,40)), color-stop(1, rgb(179,224,230)));
+    background: -webkit-linear-gradient(top, rgb(10,23,40) 0%, rgb(179,224,230) 100%);
+    background: -ms-linear-gradient(top, rgb(10,23,40) 0%, rgb(179,224,230) 100%);
+    background: linear-gradient(top, rgb(10,23,40) 0%, rgb(179,224,230) 100%);
+
+}
+
+
+/* ------------------------------     WHY      ----------------------------------*/
+
+
+#why {
+
+	background: -o-linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
+    background: -moz-linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
+    background: -webkit-gradient(linear, left top, left top, color-stop(0, rgb(179,224,230)), color-stop(0.5, rgb(254,254,254)));
+    background: -webkit-linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
+    background: -ms-linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
+    background: linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
+
+    color: #030303;
+
+}
+
+
+/* ------------------------------     HOW IT WORKS      ----------------------------------*/
+
+
+#howitworks {
+	background-color: rgb(254,254,254);
+	color: #030303;
+}
+
+
+/* ------------------------------     THEN WHAT      ----------------------------------*/
+
+
+#thenwhat {
+	background-color: rgb(254,254,254);
+	color: #030303;
+}
+
+
+/* ------------------------------     FOOTER      ----------------------------------*/
+
+
+#footer .screen {
+	height: 100px;
+}
+
+
