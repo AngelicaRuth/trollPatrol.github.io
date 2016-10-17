@@ -1,124 +1,203 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>Troll Patrol</title>
-    <meta name="description" content="Troll Patrol helps you keep comments relevant.">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png"> <!--https://thenounproject.com/search/?q=patrol&i=336263-->
-    <link rel="stylesheet" type="text/css" href="landing_page.css">
-    <link href="https://fonts.googleapis.com/css?family=Bitter|Oswald" rel="stylesheet">
-  </head>
-  <body>
+	<head>
+		<title>Troll Patrol</title>
+		<meta name="description" content="Troll Patrol helps you keep comments relevant.">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.png"> <!--https://thenounproject.com/search/?q=patrol&i=336263-->
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Bitter|Oswald" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <div id="app-root">
-      <nav class="site-nav">
-        <div class="site-nav__main">
-            <div class="site-nav-accordion">
-                <div class="site-nav__menu-item">
-                    <a class="site-nav__link" <!--href="/features/"-->
-                        <div class="site-nav__block">
-                            <div class="site-nav-item__name">Features</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="site-nav__menu-item">
-                    <a class="site-nav__link" <!--href="/about_us/">
-                        <div class="site-nav__block">
-                            <div class="site-nav-item__name">About Us</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="site-nav__menu-item">
-                    <a class="site-nav__link" <!--href="blog link">
-                        <div class="site-nav__block">
-                            <div class="site-nav-item__name">Blog</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="site-nav__items">
-            <div class="site-nav__menu-item">
-                <a class="site-nav__link nav-link-underline" <!--href="link">
-                    <div class="site-nav__block">
-                        <div class="site-nav-item__name">Log In</div>
-                    </div>
-                </a>
-            </div>
-            <div class="site-nav__menu-item">
-                <div class="site-nav__block"><a class="site-nav__button" <!--href="sign up link">Get Started</a></div>
-            </div>
-        </div>
-      </nav>
-      <div>
-        <!--<div id="bg"></div>-->
-        <div id="bgimg">
-            <img src="forest2.jpg">
-        </div>
-        <section class="hero-panel">
-            <div class="hero-content">
-                <h1 class="header-one">Troll Patrol helps you keep comments relevant</h1>
-                <p class="paragraph-one">If you see an unpleasant or unacceptable comment on Reddit, use Troll Patrol to report it.
-                  <br> Download the chrome plug-in and start using it right away!
-                </p>
-                <a href="#" class="signup-button">Sign up</a>
-            </div>
-        </section>
-      <div class="container">
-        <div class="banner">
-            <section class="communication">
-              <div class="communication-content-two">
-                <h1 class="communication-head">Good citizens of the internet, assemble!
-                  <br>Be the change you want to see, on the Internet
-                </h1>
-              </div>
-              <div class="communication-content-three">
-                <h1 class="communication-head">Ever felt that the Internet is full of trolls and villains that ruin your  mood? You are not alone!</h1>
-                <ul>
-                  <li>A <a href="https://www.theguardian.com/uk-news/2016/feb/09/internet-trolling-teenagers-online-abuse-hate-cyberbullying">survey</a> of 13- to 18-year-olds found that 24% had been targeted due to their disability, gender, race, religion, sexual orientation or transgender identity
-                  </li>
-                  <li>Last year, 25% of teenagers suffer from hate related incidents online. This figure is described by experts as a wake-up call on the impact of internet trolling.
-                  </li>
-                  <li>One out of twenty five in the same survey said they were singled out for abuse all or most of the time.
-                  </li>
-                </ul>
-              </div>
-              <div class="communication-content-four">
-              <h1 class="communication-head">Sign up</h1>
-              </div>
-            </section>
-        </div>
-      </div>
+		<script type="text/javascript">
+			
+			var scrollMe = function(target){
 
-        <section>
-            <div class="communication-content-five">
-              <h1 class="communication-head">Play a part in keeping Reddit free of negative and nasty comments!</h1>
-              <p class="communication-paragraph">Troll Patrol is a reporting system that encourages users on Reddit to keep the site free from wicked comments. Together, we can create a positive force against evil. Stop trolls from taking the conversation away from your content.
-              </p>
-            </div>
-        </section>
-        <section>
-            <div class="communication-content-six">
-              <h1 class="communication-head">How it works:</h1>
-              <p class="communication-paragraph">
-                <ol>
-                  <li>Install the Plugin</li>
-                  <li>Check with Isaac if there is a step for creating an account</li>
-                  <li>See an unpleasent comment on Reddit</li>
-                  <li>Give a reason for why you want to report</li>
-                  <li>Report it right away</li>
-                </ol>
-            </div>
-            <div class="communication-content-seven">
-              <h1 class="communication-head">Sign up</h1>
-            </div>
-        </section>
-      </div>
+				// Define time for scrolling in ms
+				var duration = 1000;
 
-        <div class="bottom"
-            <h2>Some more info</h2>
-            <h1>This is a change!!!</h1>
-        </div>
-    </div>
-  </body>
+				$('html, body').animate({scrollTop: $('#'+target).offset().top}, duration);
+			}
+
+
+		</script>
+
+	</head>
+	<body>
+
+
+		<div id="menu">
+
+			<ul id="leftnav">
+				<li><a href="#" onClick="scrollMe('hero')">Start</a></li>
+				<li><a href="#" onClick="scrollMe('playyourpart')">Play your part</a></li>
+				<li><a href="#" onClick="scrollMe('why')">Why</a></li>
+				<li><a href="#" onClick="scrollMe('howitworks')">How it works</a></li>
+				<li><a href="#" onClick="scrollMe('thenwhat')">Then what</a></li>
+			</ul>
+
+			<ul id="rightnav">
+				<li>Install Plugin</li>
+				<li>Log in</li>
+			</ul>
+
+		</div>
+
+		<!--****************************************      HERO     ****************************************************-->
+
+		<section id="hero" class="screen_bg">
+
+			<div class="screen">
+
+				<!-- VERTICAL ALIGN TRICK -->
+				<div class="valign_dummy"></div>
+
+				<div class="content">
+
+					<h1>Troll Patrol helps you keep comments relevant</h1>
+					<h2>If you see an unpleasant or unacceptable comment on Reddit, use Troll Patrol to report it.</h2>
+					<h2>Download the chrome plug-in and start using it right away!</h2>
+
+					<button>Sign up now!</button>
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+
+		<!--*************************************      PLAY YOUR PART     *************************************************-->
+
+		<section id="playyourpart" class="screen_bg">
+
+			<div class="screen">
+
+				<!-- VERTICAL ALIGN TRICK -->
+				<div class="valign_dummy"></div>
+
+				<div class="content">
+
+					<h1>Play your part</h1>
+
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+
+		<!--*************************************      WHY?     *************************************************-->
+
+		<section id="why" class="screen_bg">
+
+			<div class="screen">
+
+				<!-- VERTICAL ALIGN TRICK -->
+				<div class="valign_dummy valign_dummy_override"></div>
+
+				<div class="content">
+
+					<h1>Why?</h1>
+					<h2>Ever felt that the Internet is full of trolls and villains that ruin your  mood? You are not alone!</h2>
+					
+					<div class="why">
+					<h1>24%</h1>
+					<p> <a href="https://www.theguardian.com/uk-news/2016/feb/09/internet-trolling-teenagers-online-abuse-hate-cyberbullying" target="_blank"> A survey </a> of 13 to 18-year-olds found that 24% had been targeted due to their disability, gender, race, religion, sexual orientation or transgender identity </p>
+					</div>
+					
+					<div class="why">
+					<h1>25%</h1>
+					<p>Last year, 25% of teenagers suffer from hate related incidents online. This figure is described by experts as a wake-up call on the impact of internet trolling.</p>
+					</div>				
+					
+					<div class="why">
+					<h1>1/25</h1>
+					<p>One out of twenty five in the same survey said they were singled out for abuse all or most of the time.</p>
+					</div>				
+													
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+
+		<!--*************************************      HOW IT WORKS     *************************************************-->
+
+		<section id="howitworks" class="screen_bg">
+
+			<div class="screen">
+
+				<!-- VERTICAL ALIGN TRICK -->
+				<div class="valign_dummy"></div>
+
+				<div class="content">
+
+					<h1>How it works</h1>
+
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+
+		<!--*************************************      THEN WHAT     *************************************************-->
+
+		<section id="thenwhat" class="screen_bg">
+
+			<div class="screen">
+
+				<!-- VERTICAL ALIGN TRICK -->
+				<div class="valign_dummy"></div>
+
+				<div class="content">
+
+					<h1>Then what</h1>
+
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+
+		<!--*************************************      FOOTER     *************************************************-->
+
+		<section id="footer" class="screen_bg">
+
+			<div class="screen">
+
+				<!-- VERTICAL ALIGN TRICK -->
+				<div class="valign_dummy"></div>
+
+				<div class="content">
+
+					<ul>
+						<li>Contact</li>
+					</ul>
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+
+
+
+
+
+	</body>
 </html>

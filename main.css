@@ -20,7 +20,7 @@ body {
 
 #menu a:link,a:visited {
 	text-decoration: none;
-	color:#EFEFEF;
+	color: #EFEFEF;
 }
 
 
@@ -60,6 +60,11 @@ body {
 	margin-bottom: -1vh;
 }
 
+.valign_dummy_override {
+	height: 10%;
+}
+
+
 .content{
 	clear: both;
 	text-align: center;
@@ -70,7 +75,7 @@ body {
 /* ------------------------------        HERO         ----------------------------------*/
 
 #hero {
-	background: url(forrest_bg.jpg) no-repeat;
+	background: url(forest2.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -100,6 +105,12 @@ body {
 
 
 /* ------------------------------     WHY      ----------------------------------*/
+.why {
+	float: left;
+	width: 27%;
+	margin: 2% 3%;
+}
+
 
 
 #why {
