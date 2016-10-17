@@ -138,6 +138,16 @@ body {
 
 /* ------------------------------     THEN WHAT      ----------------------------------*/
 
+.privacy{
+	float: left;
+	width: 27%;
+	margin: 2% 3%;
+}
+
+.privacy p {
+	text-align: justify;
+  text-justify: inter-word;
+}
 
 #thenwhat {
 	background-color: rgb(254,254,254);
@@ -151,5 +161,3 @@ body {
 #footer .screen {
 	height: 100px;
 }
-
-
