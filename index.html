@@ -11,6 +11,8 @@
 
 		<script type="text/javascript">
 
+			// Menu scroll behavior
+
 			var scrollMe = function(target){
 
 				// Define time for scrolling in ms
@@ -18,6 +20,54 @@
 
 				$('html, body').animate({scrollTop: $('#'+target).offset().top}, duration);
 			}
+
+
+			// Fix menu color on scroll
+
+			$(function() {
+    
+			    // First, determine the y position of the #scroll_trigger element to understand approx where on the page things should change
+			    var trigger_Y = $('#scroll_trigger').offset().top;
+
+			    // Create offset for where things should start to happen and compensate for it in trigger
+			    var my_offset = 100;
+			    trigger_Y -= my_offset;
+			    if(trigger_Y<0){trigger_Y=0;}
+
+			    // Create function for what should happen when we scroll
+			   	var on_scroll = function() {    
+			        
+			        // Get the current scroll position
+			        var scrollPosition = $w.scrollTop();
+
+			        // Tweak scroll position according to start offset
+			        scrollPosition -= my_offset;
+			        if(scrollPosition<0){scrollPosition=0;}
+
+			        console.log('Current scroll: '+scrollPosition+' TriggerY: '+trigger_Y);
+
+			        // Calculate next alpha value
+			        var new_alpha = .9*(scrollPosition/trigger_Y);
+
+			        // Cap new alpha at desired max
+			        if(new_alpha>.9){new_alpha=.9};
+
+			        // If we have reached the magic box, change the background color
+			        $('#menu').css('background-color', 'rgba(10,23,41,'+new_alpha+')');
+			    };
+			    
+			    // Create a jQuery reference to the window. Then, listen for scrolling.
+			    var $w = $(window);
+			    $w.scroll(on_scroll);
+
+			    // Catch if page is loaded somewhere else than with scroll at very top
+			    if ($w.scrollTop()>0){
+			    	console.log('Turns out page was loaded on: '+$w.scrollTop());
+			    	//If so, run update to set initial state to right value
+			    	on_scroll();
+			    };
+
+			});
 
 
 		</script>
@@ -54,7 +104,7 @@
 
 				<div class="content">
 
-					<h1>Troll Patrol helps you keep comments relevant</h1>
+					<h1 id="scroll_trigger">Troll Patrol helps you keep comments relevant</h1>
 					<h2>If you see an unpleasant or unacceptable comment on Reddit, use Troll Patrol to report it.</h2>
 					<h2>Download the chrome plug-in and start using it right away!</h2>
 
@@ -80,6 +130,12 @@
 				<div class="content">
 
 					<h1>Play your part</h1>
+				<img src="playyourpartson.png">
+					<h2>Play a part in keeping Reddit free of negative and nasty comments!</h2>
+					<h3>Troll Patrol is a reporting system that encourages users on Reddit to keep the site free from wicked comments. 
+					<h1>Together, we can create a positive force against evil. Stop trolls from taking the conversation away from your content.</h1>
+					<h2>Good citizens of the internet, assemble!</h2>
+					<h2>Be the change you want to see, on the Internet.</h2>
 
 
 				</div>
@@ -97,7 +153,7 @@
 			<div class="screen">
 
 				<!-- VERTICAL ALIGN TRICK -->
-				<div class="valign_dummy valign_dummy_override"></div>
+				<div class="valign_dummy"></div>
 
 				<div class="content">
 
@@ -140,10 +196,29 @@
 				<div class="content">
 
 					<h1>How it works</h1>
-
+					
+					<div id="how1" class="how_img_l">
+						<img id="how_install" src="pic/install.svg">
+						<h3>1. Install the plugin</h3>
+					</div>
+					
+					
+					<div id="how2" class="how_img_r">
+						<img id="how_comment" src="pic/comment.svg">
+						<h3>2. See disturbing Reddit comment</h3>
+					</div>
+					
+					<div id="how3" class="how_img_l">
+						<img id="how_click" src="pic/click.svg">
+						<h3>3. Click to report a Troll</h3>
+					</div>
+					
+					<div id="how4" class="how_img_r">
+						<img id="how_why" src="pic/why.svg">
+						<h3>4. Give your reasons</h3>
+					</div>
 
 				</div>
-
 
 			</div>
 
