@@ -48,6 +48,12 @@ body {
 	margin: 0px 10px 0px 10px;
 }
 
+#whitelogomenu {
+	width: 70%;
+	margin-left: 50%;
+	margin-top: -10%;
+}
+
 .screen {
 	padding: 0;
 	margin: 0;
@@ -93,7 +99,7 @@ body {
 
 #playyourpart .valign_dummy{
 	
-	margin-bottom: -38vh;
+	margin-bottom: -24vh;
 }
 #playyourpart {
 
@@ -106,6 +112,10 @@ body {
 
 }
 
+#play_play {
+	width:35%;
+}
+
 
 /* ------------------------------     WHY      ----------------------------------*/
 .why {
@@ -116,12 +126,30 @@ body {
 
 #why .valign_dummy{
 	
-	margin-bottom: -30vh;
+	margin-bottom: -38vh;
 }
 
 
+#why_why{
+	width:15%;
+}
 
-#why {
+#fourtyfive {
+	width:70%;
+}
+
+#twentyfive {
+	width:70%;
+}
+
+#oneoftventyfive{
+	width:90%;
+}
+
+
+/* ------------------------------     HOW IT WORKS      ----------------------------------*/
+
+#howitworks {
 
 	background: -o-linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
     background: -moz-linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
@@ -134,10 +162,6 @@ body {
 
 }
 
-
-/* ------------------------------     HOW IT WORKS      ----------------------------------*/
-
-
 #howitworks {
 	background-color: rgb(254,254,254);
 	color: #030303;
@@ -146,7 +170,7 @@ body {
 
 #howitworks .valign_dummy{
 	
-	margin-bottom: -40vh;
+	margin-bottom: -35vh;
 	
 }
 
@@ -247,7 +271,18 @@ body {
 
 /* ------------------------------     FOOTER      ----------------------------------*/
 
+#whitelogofooter {
+	width: 7%;
+	float: right;
+	margin-right: 7%;
+	margin-bottom: 1%;
+}
+
+#contact {
+	text-decoration: none;
+	color: #EFEFEF;
+}
 
 #footer .screen {
-	height: 100px;
+	height: 80px;
 }
