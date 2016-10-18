@@ -170,7 +170,7 @@ body {
 
 #howitworks .valign_dummy{
 	
-	margin-bottom: -35vh;
+	margin-bottom: -40vh;
 	
 }
 
@@ -242,13 +242,12 @@ body {
 
 #thenwhat .screen{
 	
-	height: 60vh;
-	
+	height: 100vh;
 }
 
 #thenwhat .valign_dummy{
 	
-	margin-bottom: -18vh;
+	margin-bottom: -28vh;
 	
 }
 
@@ -268,6 +267,17 @@ body {
 	color: #030303;
 }
 
+#collect{
+	width: 50%;
+}
+
+#empowering {
+	width: 50%;
+}
+
+#fourgeeks {
+	width: 50%;
+}
 
 /* ------------------------------     FOOTER      ----------------------------------*/
 
