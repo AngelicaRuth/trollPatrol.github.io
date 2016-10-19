@@ -145,6 +145,10 @@ p {
   	text-justify: inter-word;
 }
 
+.why a {
+	color: #EFEFEF;
+}
+
 #why .valign_dummy{
 	
 	margin-bottom: -48vh;
@@ -297,7 +301,7 @@ p {
 }
 
 #fourgeeks {
-	width: 50%;
+	width: 53%;
 }
 
 /* ------------------------------     FOOTER      ----------------------------------*/
