@@ -1,7 +1,7 @@
 
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Merrieweather', serif; 
 	background-color: #0A1729;
 	color: #EFEFEF;
 	margin: 0;
@@ -90,6 +90,11 @@ p {
 	text-align: center;
 }
 
+.content:after{
+    clear: both;
+    content: "";
+    display: block;
+}
 /* ------------------------------    BEGIN CONTENT    ----------------------------------*/
 
 /* ------------------------------        HERO         ----------------------------------*/
@@ -115,7 +120,7 @@ p {
 
 #playyourpart .valign_dummy{
 	
-	margin-bottom: -40vh;
+	margin-bottom: -57vh;
 }
 #playyourpart {
 
@@ -136,7 +141,7 @@ p {
 /* ------------------------------     WHY      ----------------------------------*/
 .why {
 	float: left;
-	width: 27%;
+	width: 23%;
 	margin: 2% 3%;
 }
 
@@ -267,7 +272,6 @@ p {
 
 #thenwhat .screen{
 	
-	height: 100vh;
 }
 
 #thenwhat .valign_dummy{
@@ -285,6 +289,7 @@ p {
 .privacy p {
 	text-align: justify;
   	text-justify: inter-word;
+
 }
 
 #thenwhat {
