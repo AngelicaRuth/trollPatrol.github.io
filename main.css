@@ -6,6 +6,7 @@ body {
 	color: #EFEFEF;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 
 h1 {
@@ -18,10 +19,11 @@ h2 {
 
 h3{
 	font-size: 1.6em;
+
 }
 
 p {
-	font-size: 1.4em;
+	font-size: 1.3em;
 }
 
 #menu {
@@ -112,95 +114,30 @@ p {
 	/* IF YOU NEED TO CHANGE VERTICAL ALIGN, PLAY HERE */
 	margin-bottom: -3vh;
 }
-/* ------------------------------     PLAY YOUR PART      ----------------------------------*/
-
-.play {
-	color: #030303;
-}
-
-#playyourpart .valign_dummy{
-	
-	margin-bottom: -57vh;
-}
-#playyourpart {
-
-	background: -o-linear-gradient(top, rgb(10,23,40) 0%, rgb(179,224,230) 100%);
-    background: -moz-linear-gradient(top, rgb(10,23,40) 0%, rgb(179,224,230) 100%);
-    background: -webkit-gradient(linear, left top, left top, color-stop(0, rgb(10,23,40)), color-stop(1, rgb(179,224,230)));
-    background: -webkit-linear-gradient(top, rgb(10,23,40) 0%, rgb(179,224,230) 100%);
-    background: -ms-linear-gradient(top, rgb(10,23,40) 0%, rgb(179,224,230) 100%);
-    background: linear-gradient(top, rgb(10,23,40) 0%, rgb(179,224,230) 100%);
-
-}
-
-#play_play {
-	width:35%;
-}
-
-
-/* ------------------------------     WHY      ----------------------------------*/
-.why {
-	float: left;
-	width: 23%;
-	margin: 2% 3%;
-}
-
-.why p {
-	text-align: justify;
-  	text-justify: inter-word;
-}
-
-.why a {
-	color: #EFEFEF;
-}
-
-#why .valign_dummy{
-	
-	margin-bottom: -48vh;
-}
-
-#why_why{
-	width: 15%;
-	margin-top: -2%;
-}
-
-#fourtyfive {
-	width: 50%;
-}
-
-#twentyfive {
-	width: 50%;
-}
-
-#oneoftventyfive{
-	width: 64%;
-}
-
 
 /* ------------------------------     HOW IT WORKS      ----------------------------------*/
 
 #howitworks {
-
-	background: -o-linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
-    background: -moz-linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
-    background: -webkit-gradient(linear, left top, left top, color-stop(0, rgb(179,224,230)), color-stop(0.5, rgb(254,254,254)));
-    background: -webkit-linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
-    background: -ms-linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
-    background: linear-gradient(top, rgb(179,224,230) 0%, rgb(254,254,254) 50%);
-
-    color: #030303;
-
+    background: -o-linear-gradient(top, rgb(10,23,40) 0%, rgb(40,82,123) 100%);
+    background: -moz-linear-gradient(top, rgb(10,23,40) 0%, rgb(40,82,123) 100%);
+    background: -webkit-gradient(linear, left top, left top, color-stop(0, rgb(10,23,40)), color-stop(1, rgb(40,82,123)));
+    background: -webkit-linear-gradient(top, rgb(10,23,40) 0%, rgb(40,82,123) 100%);
+    background: -ms-linear-gradient(top, rgb(10,23,40) 0%, rgb(40,82,123) 100%);
+    background: linear-gradient(top, rgb(10,23,40) 0%, rgb(40,82,123) 100%);
 }
 
 #howitworks {
 	background-color: rgb(254,254,254);
-	color: #030303;
+	
 }
 
+#howitworks .screen{
+	height: 60em;
+}
 
 #howitworks .valign_dummy{
 	
-	margin-bottom: -40vh;
+	margin-bottom: -52vh;
 	
 }
 
@@ -234,43 +171,109 @@ p {
 
 #howitworks h3{
 	font-size: 1.6em;
-	margin: 3em 5%;
+	margin: 2.6em 5%;
 }
 
 #how_install {
-	width:25%;
+	width:17%;
 }
 
 #how_comment {
-	width:25%;
+	width:17%;
 }
 
 #how_click {
-	width:25%;
+	width:17%;
 }
 
 #how_why {
-	width:20%;
+	width:19%;
 }
 
 #how2, #how3, #how4 {
-	margin-top: -4.8em;
+	margin-top: -5.6em;
 }
 
 #how3 {
-	margin-left: 1.5em;
+	margin-left: 1.3em;
 }
 
 #how4 {
 	margin-right: 18em;
-	margin-top: -4em;
+	margin-top: -2em;
+}
+
+/* ------------------------------     PLAY YOUR PART      ----------------------------------*/
+
+#playyourpart .screen{
+	height: 48em;
+}
+
+#playyourpart .valign_dummy{
+	
+	margin-bottom: -18em;
+}
+
+#playyourpart {
+	background: -o-linear-gradient(top, rgb(40,82,123) 0%, rgb(254,254,254) 100%);
+    background: -moz-linear-gradient(top, rgb(40,82,123) 0%, rgb(254,254,254) 100%);
+    background: -webkit-gradient(linear, left top, left top, color-stop(0, rgb(40,82,123)), color-stop(0.5, rgb(254,254,254)));
+    background: -webkit-linear-gradient(top, rgb(40,82,123) 0%, rgb(254,254,254) 100%);
+    background: -ms-linear-gradient(top, rgb(40,82,123) 0%, rgb(254,254,254) 100%);
+    background: linear-gradient(top, rgb(40,82,123) 0%, rgb(254,254,254) 100%);
+	
+	color: #030303;
 }
 
 
 
-/* ------------------------------     THEN WHAT      ----------------------------------*/
+#play_play {
+	width:35%;
+}
+
+/* ------------------------------     WHY      ----------------------------------*/
+
+.why {
+	float: left;
+	width: 23%;
+	margin: 2% 5%;
+}
+
+.why p {
+	text-align: justify;
+  	text-justify: inter-word;
+}
+
+.why a {
+	color: #EFEFEF;
+}
+
+#why .valign_dummy{
+	
+	margin-bottom: -52vh;
+}
+
+#why_why{
+	width: 15%;
+	margin-top: -2%;
+}
+
+#fourtyfive {
+	width: 50%;
+}
+
+#twentyfive {
+	width: 50%;
+}
+
+#oneoftventyfive{
+	width: 64%;
+}
+
+/* ------------------------------     PRIVACY POLICY      ----------------------------------*/
 
 #thenwhat .screen{
+	height: 50em;
 	
 }
 
@@ -324,5 +327,5 @@ p {
 }
 
 #footer .screen {
-	height: 80px;
+	height: 10em;
 }
